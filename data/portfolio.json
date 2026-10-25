@@ -1,6 +1,6 @@
 {
-  "siteTitle": "Portfolio — R3VERSE",
-  "brandName": "R3VERSE",
+  "siteTitle": "R3verse - Portfolio",
+  "brandName": "R3verse",
   "logoPath": "assets/logo.svg",
   "profile": {
     "name": "Het Jagani",
@@ -16,7 +16,7 @@
     "footerText": "Crafted frame by frame. Edited with purpose.",
     "heroStatOne": "Cinematic Editing",
     "heroStatTwo": "Color & Sound Design",
-    "email": "hetjagani22@gmail.com",
+    "email": "hello@example.com",
     "resumeUrl": ""
   },
   "theme": {
@@ -35,7 +35,7 @@
     },
     {
       "label": "Email",
-      "url": "mailto:hetjagani22@gmail.com"
+      "url": "hetjagani22@gmail.com"
     }
   ],
   "aboutCards": [
@@ -90,78 +90,18 @@
   "experience": [
     {
       "period": "Present",
-      "role": "Jr. Video Editor",
+      "role": "Video Editor",
       "company": "Syphnosys Technology",
       "description": "Designing and shipping practical tools, learning cloud architecture, and improving deployment workflows."
-    },
-    #{
-    #  "period": "Earlier",
-    #  "role": "Learning by building",
-    #  "company": "Hands-on projects",
-    #  "description": "Developing full-stack applications and exploring infrastructure, automation, and reliable operations."
-    #}
-  ],
-  "projects": [
-    {
-      "title": "FleetPilot",
-      "category": "Tools",
-      "description": "A central operations dashboard concept for scripts, services, and server workflows.",
-      "tags": [
-        "Node.js",
-        "Automation",
-        "Dashboard"
-      ],
-      "image": "",
-      "video": "",
-      "github": "https://github.com/yourusername",
-      "demo": "",
-      "featured": true
-    },
-    {
-      "title": "DockScope",
-      "category": "Tools",
-      "description": "A clean log-viewing experience for Docker containers and remote hosts.",
-      "tags": [
-        "Docker",
-        "Logs",
-        "Web UI"
-      ],
-      "image": "",
-      "video": "",
-      "github": "https://github.com/yourusername",
-      "demo": "",
-      "featured": true
-    },
-    {
-      "title": "Daymark",
-      "category": "Web",
-      "description": "A focused daily task and notes workspace with a calm, modern interface.",
-      "tags": [
-        "Web app",
-        "Productivity",
-        "UI"
-      ],
-      "image": "",
-      "video": "",
-      "github": "https://github.com/yourusername",
-      "demo": "",
-      "featured": false
     }
   ],
-    "videos": [
+  "videos": [
     {
-      "title": "Project walkthrough",
-      "description": "A short introduction to a project and its key features.",
-      "src": "assets/videos/01.mp4",
-      "poster": "",
-      "category": "Demo"
-    },
-    {
-      "title": "Technical deep dive",
-      "description": "A closer look at the architecture and implementation.",
-      "src": "assets/videos/technical-deep-dive.mp4",
-      "poster": "",
-      "category": "Engineering"
+      "title": "first demo",
+      "description": "first demo",
+      "category": "SHOWREEL",
+      "src": "assets/videos/1792950981682-01.mp4",
+      "poster": ""
     }
   ]
 }
