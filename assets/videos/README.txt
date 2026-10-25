@@ -1,1 +1,1 @@
-Do not place private/original videos here for a public GitHub Pages site. Public files can be downloaded. Use a streaming provider with signed playback and configure videoSecurity in data/portfolio.json; see the main README.md for setup.
+Uploaded videos are public when served from GitHub Pages. Upload compressed MP4/WebM preview copies only, preferably under 50 MB. Do not upload private originals. Add videos through Admin Studio → Video gallery.

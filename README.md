@@ -1,6 +1,6 @@
 # Modern Portfolio — GitHub Pages
 
-A responsive, static portfolio website with glassmorphism, dark/light theme, cursor spotlight, scroll animations, projects, video demos, profile, skills, experience, and contact links. No backend, Cloudflare Worker, Wrangler, OAuth, database, or API setup is required.
+A responsive, static portfolio website with glassmorphism, dark/light theme, cursor spotlight, scroll animations, video demos, profile, skills, experience, and contact links. The public site is static GitHub Pages. Admin Studio uses the GitHub Contents API to publish edits, so you must connect a repository-scoped GitHub token.
 
 ## Publish on GitHub Pages
 1. Upload the contents of this folder to the root of your GitHub repository and commit them to `main`.
@@ -17,7 +17,6 @@ Common fields include:
 - `social`: social profile links.
 - `skills`: grouped skill lists.
 - `experience`: work or project timeline.
-- `projects`: project title, category, description, tags, GitHub URL, demo URL and optional image/video.
 - `videos`: video title, description, video path and optional poster image.
 
 Keep the JSON valid: use double quotes around strings and do not leave trailing commas. If you change `logoPath`, upload the logo into the repository too. Images can go in `assets/images/`. **Do not upload private/original video files to a public GitHub repository.** Public MP4 files and any media URL used by a browser can be copied by visitors.
@@ -34,22 +33,14 @@ Then open `http://localhost:8000`.
 - Dark/light theme selection is saved in each visitor's browser.
 
 
-## Video protection setup (important)
+## Admin Studio and video uploads
+1. Visit `/admin/`, sign in, and connect your repository using a fine-grained GitHub personal access token with **Contents: Read and write** access to that repository only.
+2. Choose **Video gallery** in the side panel. Upload a compressed MP4 or WebM preview (recommended under 50 MB), enter its title/description, and click **Upload video & add to gallery**.
+3. Click **Save & publish** to publish the gallery metadata. GitHub Pages will update after the commit deploys.
+4. Use **Admin settings** to change the local admin password. This static-site password is stored in this browser only; clearing browser storage resets it to the default. It is a convenience lock, not server-side authentication. Do not rely on it to protect secrets.
 
-The video section is prepared for **Cloudflare Stream signed playback** via a separate authorization endpoint. GitHub Pages is static and cannot safely create signed tokens itself.
+## Important video note
+GitHub Pages videos in a public repository are publicly accessible and can be downloaded. Upload only compressed preview copies, not private originals. The video slider automatically changes preview every 10 seconds. Selecting a tile opens the full player in a glass-effect modal. No Cloudflare video-security setup is used in this version.
 
-1. Upload video files to Cloudflare Stream (or another streaming provider that supports signed playback). Do not upload originals to this public repo.
-2. Configure the provider to require signed URLs/tokens for the videos.
-3. Deploy a server-side authorization endpoint. It should validate allowed video IDs, authorize the request as needed, create a short-lived signed playback URL/token using a secret stored server-side, and return JSON like `{"playbackUrl":"https://...signed-playback-url..."}`. Never put provider API tokens or signing secrets in `data/portfolio.json` or browser JavaScript.
-4. In `data/portfolio.json`, set `videoSecurity.playbackEndpoint` to your deployed endpoint URL and replace each `videoId` with the real provider video ID.
-5. Test the endpoint's CORS policy for your GitHub Pages domain. Use HTTPS only.
-
-The browser requests a short-lived playback URL when a viewer presses Play. The endpoint must implement the actual provider-specific signing; this repository deliberately does not include secrets or pretend to secure videos without that server-side step. If you do not configure an endpoint, secure-stream playback will show a configuration message.
-
-### What this does and does not protect
-
-- The player hides its normal download control where supported, and the UI adds a preview watermark.
-- Signed playback can make direct-link sharing and casual downloading harder when tokens are short-lived and provider enforcement is enabled.
-- It **cannot** prevent screen recording, camera recording, or every form of media capture. Browser-visible video must be delivered to the viewer to play.
-- A watermark rendered by this website is a deterrent, not a forensic watermark; it may be cropped out. For stronger deterrence, burn a visible watermark into preview files before uploading them to the streaming provider.
-- Do not use direct `assets/videos/*.mp4` URLs for content you need to protect. A static file hosted in a public repository is public.
+## Preview locally
+Run `python3 -m http.server 8000` from the project root, then open `http://localhost:8000`.
