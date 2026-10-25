@@ -4,12 +4,12 @@ compatibility_date = "2026-10-01"
 
 [[kv_namespaces]]
 binding = "SESSIONS"
-id = "REPLACE_WITH_KV_NAMESPACE_ID"
+id = "d99553eef0aa476bbc1e5245735e9685"
 
 [vars]
-GITHUB_OWNER = "YOUR_GITHUB_USERNAME"
-GITHUB_REPO = "YOUR_PORTFOLIO_REPOSITORY"
+GITHUB_OWNER = "Het072"
+GITHUB_REPO = "https://github.com/Het072/R3verse-Portfolio"
 GITHUB_BRANCH = "main"
-ALLOWED_ORIGIN = "https://YOUR_GITHUB_USERNAME.github.io"
-ALLOWED_GITHUB_USERS = "YOUR_GITHUB_USERNAME"
-OAUTH_CALLBACK_URL = "https://portfolio-publisher.YOUR_SUBDOMAIN.workers.dev/auth/callback"
+ALLOWED_ORIGIN = "https://het072.github.io"
+ALLOWED_GITHUB_USERS = "het072"
+OAUTH_CALLBACK_URL = "https://het072.github.io/R3verse-Portfolio//auth/callback"
