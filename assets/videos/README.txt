@@ -1,1 +1,1 @@
-Add compressed MP4/WebM demo videos here. Update data/portfolio.json with matching paths.
+Do not place private/original videos here for a public GitHub Pages site. Public files can be downloaded. Use a streaming provider with signed playback and configure videoSecurity in data/portfolio.json; see the main README.md for setup.

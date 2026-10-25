@@ -1,10 +1,10 @@
 {
-  "siteTitle": "Portfolio — R3verse",
-  "brandName": "R3VERSE",
+  "siteTitle": "Portfolio — Your Name",
+  "brandName": "YOURNAME",
   "logoPath": "assets/logo.svg",
   "profile": {
-    "name": "Het Jagani",
-    "role": "Video Editor",
+    "name": "Your Name",
+    "role": "Developer & Builder",
     "kicker": "HELLO, I'M",
     "availability": "Available for interesting projects",
     "bio": "I build thoughtful digital experiences, useful tools, and reliable systems. This is where I share what I’m learning and creating.",
@@ -35,7 +35,7 @@
     },
     {
       "label": "Email",
-      "url": "mailto:hetjagani22@gmail.com"
+      "url": "mailto:hello@example.com"
     }
   ],
   "aboutCards": [
@@ -151,17 +151,24 @@
   "videos": [
     {
       "title": "Project walkthrough",
-      "description": "A short introduction to a project and its key features.",
-      "src": "assets/videos/project-walkthrough.mp4",
+      "description": "A watermarked portfolio preview streamed through an authorization endpoint.",
+      "provider": "cloudflare-stream",
+      "videoId": "REPLACE_WITH_CLOUDFLARE_STREAM_VIDEO_ID",
       "poster": "",
       "category": "Demo"
     },
     {
       "title": "Technical deep dive",
-      "description": "A closer look at the architecture and implementation.",
-      "src": "assets/videos/technical-deep-dive.mp4",
+      "description": "A protected preview. Configure the video ID and playback authorization endpoint before publishing.",
+      "provider": "cloudflare-stream",
+      "videoId": "REPLACE_WITH_CLOUDFLARE_STREAM_VIDEO_ID",
       "poster": "",
       "category": "Engineering"
     }
-  ]
+  ],
+  "videoSecurity": {
+    "provider": "cloudflare-stream",
+    "playbackEndpoint": "https://YOUR-AUTH-SERVICE.example.com/api/video-playback",
+    "note": "Replace playbackEndpoint with your own authenticated token-issuing endpoint. Never put provider API secrets in this JSON."
+  }
 }
