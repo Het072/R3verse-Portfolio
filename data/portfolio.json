@@ -1,0 +1,167 @@
+{
+  "siteTitle": "Portfolio — Your Name",
+  "brandName": "YOURNAME",
+  "logoPath": "assets/logo.svg",
+  "profile": {
+    "name": "Your Name",
+    "role": "Developer & Builder",
+    "kicker": "HELLO, I'M",
+    "availability": "Available for interesting projects",
+    "bio": "I build thoughtful digital experiences, useful tools, and reliable systems. This is where I share what I’m learning and creating.",
+    "aboutHeading": "Curious by nature.\nBuilder by choice.",
+    "aboutText": "I enjoy turning complex ideas into clear, useful products. I care about practical engineering, clean interfaces, automation, and learning how systems work from end to end.",
+    "aboutDetail": "A snapshot of what motivates me and how I approach my work.",
+    "skillsIntro": "My toolkit grows with every project, experiment, and new challenge.",
+    "contactText": "Have a project, an idea, or just want to talk tech? My inbox is open.",
+    "footerText": "Designed with curiosity and a lot of coffee.",
+    "heroStatOne": "Full-stack",
+    "heroStatTwo": "Cloud & automation",
+    "email": "hello@example.com",
+    "resumeUrl": ""
+  },
+  "theme": {
+    "accent": "#9b8cff",
+    "accentSecondary": "#53d9d0",
+    "default": "dark"
+  },
+  "social": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/yourusername"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/yourusername"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:hello@example.com"
+    }
+  ],
+  "aboutCards": [
+    {
+      "icon": "✳",
+      "title": "Curiosity first",
+      "text": "I like understanding why things work, not just which buttons to press."
+    },
+    {
+      "icon": "⌘",
+      "title": "Practical by design",
+      "text": "I aim for solutions that are maintainable, useful, and easy to operate."
+    },
+    {
+      "icon": "↗",
+      "title": "Always improving",
+      "text": "Every build is a chance to learn a better approach and share what works."
+    }
+  ],
+  "skills": [
+    {
+      "group": "Cloud & infrastructure",
+      "items": [
+        "AWS",
+        "Docker",
+        "Linux",
+        "Nginx",
+        "Networking"
+      ]
+    },
+    {
+      "group": "Development",
+      "items": [
+        "JavaScript",
+        "Node.js",
+        "NestJS",
+        "REST APIs",
+        "Git"
+      ]
+    },
+    {
+      "group": "Data & automation",
+      "items": [
+        "MongoDB",
+        "PostgreSQL",
+        "Redis",
+        "CI/CD",
+        "Automation"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "period": "Present",
+      "role": "Independent builder",
+      "company": "Personal projects",
+      "description": "Designing and shipping practical tools, learning cloud architecture, and improving deployment workflows."
+    },
+    {
+      "period": "Earlier",
+      "role": "Learning by building",
+      "company": "Hands-on projects",
+      "description": "Developing full-stack applications and exploring infrastructure, automation, and reliable operations."
+    }
+  ],
+  "projects": [
+    {
+      "title": "FleetPilot",
+      "category": "Tools",
+      "description": "A central operations dashboard concept for scripts, services, and server workflows.",
+      "tags": [
+        "Node.js",
+        "Automation",
+        "Dashboard"
+      ],
+      "image": "",
+      "video": "",
+      "github": "https://github.com/yourusername",
+      "demo": "",
+      "featured": true
+    },
+    {
+      "title": "DockScope",
+      "category": "Tools",
+      "description": "A clean log-viewing experience for Docker containers and remote hosts.",
+      "tags": [
+        "Docker",
+        "Logs",
+        "Web UI"
+      ],
+      "image": "",
+      "video": "",
+      "github": "https://github.com/yourusername",
+      "demo": "",
+      "featured": true
+    },
+    {
+      "title": "Daymark",
+      "category": "Web",
+      "description": "A focused daily task and notes workspace with a calm, modern interface.",
+      "tags": [
+        "Web app",
+        "Productivity",
+        "UI"
+      ],
+      "image": "",
+      "video": "",
+      "github": "https://github.com/yourusername",
+      "demo": "",
+      "featured": false
+    }
+  ],
+  "videos": [
+    {
+      "title": "Project walkthrough",
+      "description": "A short introduction to a project and its key features.",
+      "src": "assets/videos/project-walkthrough.mp4",
+      "poster": "",
+      "category": "Demo"
+    },
+    {
+      "title": "Technical deep dive",
+      "description": "A closer look at the architecture and implementation.",
+      "src": "assets/videos/technical-deep-dive.mp4",
+      "poster": "",
+      "category": "Engineering"
+    }
+  ]
+}

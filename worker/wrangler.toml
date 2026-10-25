@@ -1,0 +1,15 @@
+name = "portfolio-publisher"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[vars]
+GITHUB_OWNER = "YOUR_GITHUB_USERNAME"
+GITHUB_REPO = "YOUR_PORTFOLIO_REPOSITORY"
+GITHUB_BRANCH = "main"
+ALLOWED_ORIGIN = "https://YOUR_GITHUB_USERNAME.github.io"
+ALLOWED_GITHUB_USERS = "YOUR_GITHUB_USERNAME"
+OAUTH_CALLBACK_URL = "https://portfolio-publisher.YOUR_SUBDOMAIN.workers.dev/auth/callback"
