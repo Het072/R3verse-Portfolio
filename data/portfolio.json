@@ -1,10 +1,10 @@
 {
-  "siteTitle": "r3verse — Video Editor & Visual Storyteller",
-  "brandName": "r3verse",
+  "siteTitle": "R3verse - Portfolio",
+  "brandName": "R3verse",
   "logoPath": "assets/logo.svg",
   "profile": {
-    "name": "r3verse",
-    "role": "Video Editor & Visual Storyteller",
+    "name": "Het Jagani",
+    "role": "Video Editor",
     "kicker": "HELLO, I'M",
     "availability": "Available for video editing projects",
     "bio": "I turn raw footage into cinematic stories. From smooth transitions and dynamic pacing to color grading and sound design, I create videos that capture attention and leave an impact.",
@@ -27,7 +27,7 @@
   "social": [
     {
       "label": "GitHub",
-      "url": "https://github.com/yourusername"
+      "url": "https://github.com/het072"
     },
     {
       "label": "LinkedIn",
@@ -35,7 +35,7 @@
     },
     {
       "label": "Email",
-      "url": "mailto:hello@example.com"
+      "url": "hetjagani22@gmail.com"
     }
   ],
   "aboutCards": [
@@ -90,16 +90,18 @@
   "experience": [
     {
       "period": "Present",
-      "role": "Independent builder",
-      "company": "Personal projects",
+      "role": "Video Editor",
+      "company": "Syphnosys Technology",
       "description": "Designing and shipping practical tools, learning cloud architecture, and improving deployment workflows."
-    },
-    {
-      "period": "Earlier",
-      "role": "Learning by building",
-      "company": "Hands-on projects",
-      "description": "Developing full-stack applications and exploring infrastructure, automation, and reliable operations."
     }
   ],
-  "videos": []
+  "videos": [
+    {
+      "title": "first demo",
+      "description": "first demo",
+      "category": "SHOWREEL",
+      "src": "assets/videos/1792950981682-01.mp4",
+      "poster": ""
+    }
+  ]
 }
