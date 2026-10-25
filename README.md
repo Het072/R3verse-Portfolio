@@ -8,6 +8,14 @@ A responsive, static portfolio website with glassmorphism, dark/light theme, cur
 3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/(root)`, then save.
 4. Wait for the Pages deployment to finish.
 
+## Edit your portfolio from the Admin Studio
+
+Open your published site and go to `/admin/` (for example, `https://YOUR-USERNAME.github.io/YOUR-REPO/admin/`). The Admin Studio lets you edit profile fields, colors, social links, skills, experience, projects, and videos, then commits the changes to `data/portfolio.json` so GitHub Pages republishes the site.
+
+**One-time setup:** enter your GitHub owner, repository, branch, and a fine-grained personal access token. Limit the token to this one repository and grant **Contents: Read and write** only. The token is held in the current browser tab session and is not written into the website files. Clear the session by closing the tab or signing out of the browser session. Anyone who obtains that token could edit your repo, so never share it or paste it into public files. If you prefer not to use a token in the browser, use a CMS with a server-side OAuth flow instead.
+
+For `projects`, `videos`, `skills`, `social`, `experience`, and `aboutCards`, use the structured JSON editor in the matching Admin Studio tab; you do not need to edit JavaScript or HTML.
+
 ## Update your portfolio content
 All portfolio text and content are stored in `data/portfolio.json`. To update your website: open that file in your GitHub repository, click the pencil/Edit button, change the values, then click **Commit changes**. GitHub Pages will rebuild the site automatically. You can also edit the file locally and push it to GitHub.
 
@@ -30,7 +38,7 @@ python3 -m http.server 8000
 Then open `http://localhost:8000`.
 
 ## Notes
-- This is a static website. Visitors cannot edit the site through the webpage; only repository contributors with GitHub access can change the JSON or assets.
+- This is a static website. Visitors cannot publish edits unless they possess a repository-scoped write token. The Admin Studio writes content to your GitHub repository using the token you enter; it does not embed credentials in the public site.
 - Dark/light theme selection is saved in each visitor's browser.
 
 
