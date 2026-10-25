@@ -1,22 +1,22 @@
 {
-  "siteTitle": "Portfolio — R3VERSE",
-  "brandName": "R3VERSE",
+  "siteTitle": "Portfolio — Your Name",
+  "brandName": "YOURNAME",
   "logoPath": "assets/logo.svg",
   "profile": {
-    "name": "Het Jagani",
-    "role": "Video Editor",
+    "name": "Your Name",
+    "role": "Developer & Builder",
     "kicker": "HELLO, I'M",
-    "availability": "Available for video editing projects",
-    "bio": "I turn raw footage into cinematic stories. From smooth transitions and dynamic pacing to color grading and sound design, I create videos that capture attention and leave an impact.",
-    "aboutHeading": "Every frame.\nTells a story.",
-    "aboutText": "I'm a video editor passionate about transforming raw footage into engaging visual experiences. I focus on storytelling, rhythm, transitions, color grading, and sound design to bring every project to life.",
-    "aboutDetail": "From the first cut to the final color grade, every detail matters.",
-    "skillsIntro": "My creative toolkit combines storytelling, technical precision, and a passion for visual experimentation.",
-    "contactText": "Have a video in mind? Let's bring your vision to life. Get in touch to collaborate on your next project.",
-    "footerText": "Crafted frame by frame. Edited with purpose.",
-    "heroStatOne": "Cinematic Editing",
-    "heroStatTwo": "Color & Sound Design",
-    "email": "hetjagani22@gmail.com",
+    "availability": "Available for interesting projects",
+    "bio": "I build thoughtful digital experiences, useful tools, and reliable systems. This is where I share what I’m learning and creating.",
+    "aboutHeading": "Curious by nature.\nBuilder by choice.",
+    "aboutText": "I enjoy turning complex ideas into clear, useful products. I care about practical engineering, clean interfaces, automation, and learning how systems work from end to end.",
+    "aboutDetail": "A snapshot of what motivates me and how I approach my work.",
+    "skillsIntro": "My toolkit grows with every project, experiment, and new challenge.",
+    "contactText": "Have a project, an idea, or just want to talk tech? My inbox is open.",
+    "footerText": "Designed with curiosity and a lot of coffee.",
+    "heroStatOne": "Full-stack",
+    "heroStatTwo": "Cloud & automation",
+    "email": "hello@example.com",
     "resumeUrl": ""
   },
   "theme": {
@@ -27,7 +27,7 @@
   "social": [
     {
       "label": "GitHub",
-      "url": "https://github.com/het072"
+      "url": "https://github.com/yourusername"
     },
     {
       "label": "LinkedIn",
@@ -35,71 +35,71 @@
     },
     {
       "label": "Email",
-      "url": "mailto:hetjagani22@gmail.com"
+      "url": "mailto:hello@example.com"
     }
   ],
   "aboutCards": [
     {
       "icon": "✳",
-      "title": "Storytelling first",
-      "text": "Every cut has a purpose. I focus on pacing, emotion, and flow to turn raw footage into engaging visual stories."
+      "title": "Curiosity first",
+      "text": "I like understanding why things work, not just which buttons to press."
     },
     {
-      "icon": "◈",
-      "title": "Details matter",
-      "text": "From seamless transitions to precise color grading and sound design, I make every frame feel intentional."
+      "icon": "⌘",
+      "title": "Practical by design",
+      "text": "I aim for solutions that are maintainable, useful, and easy to operate."
     },
     {
       "icon": "↗",
-      "title": "Always evolving",
-      "text": "I experiment with new editing styles, techniques, and creative ideas to keep every project fresh and impactful."
+      "title": "Always improving",
+      "text": "Every build is a chance to learn a better approach and share what works."
     }
   ],
   "skills": [
     {
-      "group": "Video Editing",
+      "group": "Cloud & infrastructure",
       "items": [
-        "Cinematic Editing",
-        "Storytelling & Pacing",
-        "Transitions & Effects",
-        "Short-Form Content",
-        "Long-Form Editing"
+        "AWS",
+        "Docker",
+        "Linux",
+        "Nginx",
+        "Networking"
       ]
     },
     {
-      "group": "Visual Design",
+      "group": "Development",
       "items": [
-        "Color Grading",
-        "Color Correction",
-        "Motion Graphics",
-        "Typography",
-        "Visual Effects"
+        "JavaScript",
+        "Node.js",
+        "NestJS",
+        "REST APIs",
+        "Git"
       ]
     },
     {
-      "group": "Audio & Workflow",
+      "group": "Data & automation",
       "items": [
-        "Sound Design",
-        "Audio Synchronization",
-        "Music Selection",
-        "Beat Sync Editing",
-        "Export Optimization"
+        "MongoDB",
+        "PostgreSQL",
+        "Redis",
+        "CI/CD",
+        "Automation"
       ]
     }
   ],
   "experience": [
     {
       "period": "Present",
-      "role": "Jr. Video Editor",
-      "company": "Syphnosys Technology",
+      "role": "Independent builder",
+      "company": "Personal projects",
       "description": "Designing and shipping practical tools, learning cloud architecture, and improving deployment workflows."
     },
-    #{
-    #  "period": "Earlier",
-    #  "role": "Learning by building",
-    #  "company": "Hands-on projects",
-    #  "description": "Developing full-stack applications and exploring infrastructure, automation, and reliable operations."
-    #}
+    {
+      "period": "Earlier",
+      "role": "Learning by building",
+      "company": "Hands-on projects",
+      "description": "Developing full-stack applications and exploring infrastructure, automation, and reliable operations."
+    }
   ],
   "projects": [
     {
@@ -151,17 +151,24 @@
   "videos": [
     {
       "title": "Project walkthrough",
-      "description": "A short introduction to a project and its key features.",
-      "src": "assets/videos/01.mp4",
+      "description": "A watermarked portfolio preview streamed through an authorization endpoint.",
+      "provider": "cloudflare-stream",
+      "videoId": "REPLACE_WITH_CLOUDFLARE_STREAM_VIDEO_ID",
       "poster": "",
       "category": "Demo"
     },
     {
       "title": "Technical deep dive",
-      "description": "A closer look at the architecture and implementation.",
-      "src": "assets/videos/technical-deep-dive.mp4",
+      "description": "A protected preview. Configure the video ID and playback authorization endpoint before publishing.",
+      "provider": "cloudflare-stream",
+      "videoId": "REPLACE_WITH_CLOUDFLARE_STREAM_VIDEO_ID",
       "poster": "",
       "category": "Engineering"
     }
-  ]
+  ],
+  "videoSecurity": {
+    "provider": "cloudflare-stream",
+    "playbackEndpoint": "https://YOUR-AUTH-SERVICE.example.com/api/video-playback",
+    "note": "Replace playbackEndpoint with your own authenticated token-issuing endpoint. Never put provider API secrets in this JSON."
+  }
 }
