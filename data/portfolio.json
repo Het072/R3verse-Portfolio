@@ -1,10 +1,19 @@
 {
+<<<<<<< HEAD
   "siteTitle": "r3verse — Video Editor & Visual Storyteller",
   "brandName": "r3verse",
   "logoPath": "assets/logo.svg",
   "profile": {
     "name": "r3verse",
     "role": "Video Editor & Visual Storyteller",
+=======
+  "siteTitle": "Portfolio — R3VERSE",
+  "brandName": "R3VERSE",
+  "logoPath": "assets/logo.svg",
+  "profile": {
+    "name": "Het Jagani",
+    "role": "Video Editor",
+>>>>>>> dd46313c471f0f4f1beaf5178cb35082225b5c1f
     "kicker": "HELLO, I'M",
     "availability": "Available for video editing projects",
     "bio": "I turn raw footage into cinematic stories. From smooth transitions and dynamic pacing to color grading and sound design, I create videos that capture attention and leave an impact.",
@@ -16,7 +25,11 @@
     "footerText": "Crafted frame by frame. Edited with purpose.",
     "heroStatOne": "Cinematic Editing",
     "heroStatTwo": "Color & Sound Design",
+<<<<<<< HEAD
     "email": "hello@example.com",
+=======
+    "email": "hetjagani22@gmail.com",
+>>>>>>> dd46313c471f0f4f1beaf5178cb35082225b5c1f
     "resumeUrl": ""
   },
   "theme": {
@@ -27,7 +40,7 @@
   "social": [
     {
       "label": "GitHub",
-      "url": "https://github.com/yourusername"
+      "url": "https://github.com/het072"
     },
     {
       "label": "LinkedIn",
@@ -35,7 +48,7 @@
     },
     {
       "label": "Email",
-      "url": "mailto:hello@example.com"
+      "url": "mailto:hetjagani22@gmail.com"
     }
   ],
   "aboutCards": [
@@ -90,16 +103,82 @@
   "experience": [
     {
       "period": "Present",
-      "role": "Independent builder",
-      "company": "Personal projects",
+      "role": "Jr. Video Editor",
+      "company": "Syphnosys Technology",
       "description": "Designing and shipping practical tools, learning cloud architecture, and improving deployment workflows."
-    },
-    {
-      "period": "Earlier",
-      "role": "Learning by building",
-      "company": "Hands-on projects",
-      "description": "Developing full-stack applications and exploring infrastructure, automation, and reliable operations."
     }
   ],
+<<<<<<< HEAD
   "videos": []
 }
+=======
+  "projects": [
+    {
+      "title": "FleetPilot",
+      "category": "Tools",
+      "description": "A central operations dashboard concept for scripts, services, and server workflows.",
+      "tags": [
+        "Node.js",
+        "Automation",
+        "Dashboard"
+      ],
+      "image": "",
+      "video": "",
+      "github": "https://github.com/yourusername",
+      "demo": "",
+      "featured": true
+    },
+    {
+      "title": "DockScope",
+      "category": "Tools",
+      "description": "A clean log-viewing experience for Docker containers and remote hosts.",
+      "tags": [
+        "Docker",
+        "Logs",
+        "Web UI"
+      ],
+      "image": "",
+      "video": "",
+      "github": "https://github.com/yourusername",
+      "demo": "",
+      "featured": true
+    },
+    {
+      "title": "Daymark",
+      "category": "Web",
+      "description": "A focused daily task and notes workspace with a calm, modern interface.",
+      "tags": [
+        "Web app",
+        "Productivity",
+        "UI"
+      ],
+      "image": "",
+      "video": "",
+      "github": "https://github.com/yourusername",
+      "demo": "",
+      "featured": false
+    }
+  ],
+  "videos": [
+    {
+      "title": "Project walkthrough",
+      "description": "A short introduction to a project and its key features.",
+      "src": "assets/videos/01.mp4",
+      "poster": "",
+      "category": "Demo"
+    },
+    {
+      "title": "Technical deep dive",
+      "description": "A closer look at the architecture and implementation.",
+      "src": "assets/videos/technical-deep-dive.mp4",
+      "poster": "",
+      "category": "Engineering"
+    }
+  ],
+  "videoSecurity": {
+    "provider": "cloudflare-stream",
+    "playbackEndpoint": "https://YOUR-AUTH-SERVICE.example.com/api/video-playback",
+    "note": "Replace playbackEndpoint with your own authenticated token-issuing endpoint. Never put provider API secrets in this JSON."
+  }
+}
+>>>>>>> dd46313c471f0f4f1beaf5178cb35082225b5c1f
