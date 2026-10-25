@@ -1,10 +1,10 @@
 {
-  "siteTitle": "Portfolio — Your Name",
-  "brandName": "YOURNAME",
+  "siteTitle": "Portfolio — R3verse",
+  "brandName": "R3VERSE",
   "logoPath": "assets/logo.svg",
   "profile": {
-    "name": "Your Name",
-    "role": "Developer & Builder",
+    "name": "Het Jagani",
+    "role": "Video Editor",
     "kicker": "HELLO, I'M",
     "availability": "Available for interesting projects",
     "bio": "I build thoughtful digital experiences, useful tools, and reliable systems. This is where I share what I’m learning and creating.",
@@ -35,7 +35,7 @@
     },
     {
       "label": "Email",
-      "url": "mailto:hello@example.com"
+      "url": "mailto:hetjagani22@gmail.com"
     }
   ],
   "aboutCards": [
